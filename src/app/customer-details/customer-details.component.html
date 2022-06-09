@@ -1,0 +1,17 @@
+<div style="background-color:cadetblue;height:100px;margin-top:60px">
+    <p #localRefCustomer>customer-details works!</p>
+    <!-- var i = 10; -->
+
+    <!-- line no 6 this is the child of the this template(view) -->
+    <input type="text" [value]="textValue" #textInput />
+    <!-- <button (click)="evtUpdate(textInput)">Update</button> -->
+    <button (click)="evtUpdate()">Update</button>
+
+    
+    <ng-content></ng-content>  
+    <!-- now ngcontent contains the span -->
+
+    
+
+
+</div>

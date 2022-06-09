@@ -1,0 +1,66 @@
+<!-- <app-angular-basics></app-angular-basics> -->
+
+<!-- <input type="text" (keyup)="evtkeyup()" > -->
+
+<!-- @input decarator -->
+<!-- attribute databinding -->
+
+<div style="padding:30px;text-align:center;height: 300px; background-color: yellow;">
+
+    <p>Updated value is  : {{updateTestValue}}</p>
+    <button (click)="evtClick()">Click</button>
+    
+    <!-- <input [type]="test" /> -->
+     
+    <!-- i need to pass the test value to the component -->
+    
+    <!-- <div>content here </div>
+    <span>asdasdas</span>
+    <label>adasdnasjdfadn</label> -->
+    
+    
+    i can give the content also in the component
+    
+    <app-customer-details [xyz]="test" (evtemitUpdate) = "aliasevtEmitClick($event)">
+    
+        
+        <!-- this is called content -->
+        <input type="text" value="CS12345" #customerID>
+    
+        <span>sample text......</span>  
+        <!-- // 1.this is i have created the content 
+            //  2.project content -->
+            
+    </app-customer-details>
+    
+    
+    
+    <!-- ngIf is the angular structural directive -->
+    
+    
+    <div *ngIf="isShow;else calling">
+         <p>Its showing.........</p>
+    </div>
+    
+    
+    <!-- whenever its called by someone then only it will works until and then it would't work-->
+    <ng-template >
+        <p>No problem... i am here......</p>
+    </ng-template>
+    
+    
+    <ng-template #calling>
+       <span>hello are you their.............</span> 
+    </ng-template>
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    

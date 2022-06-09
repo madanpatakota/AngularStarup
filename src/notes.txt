@@ -1,0 +1,13 @@
+
+
+Lifecycle hooks are under the component
+1. ngOnchanges()           -> its useful for track the input changes
+2. ngOninit()              -> whenever my component is loading....
+3. ngDocheck()             -> it will trigger once we are going to change any element of the form
+4. AfterContentInit()      -> i can take the content data into the this lifecycle hook
+5. AfterContentChecked()   -> it wil trigger when content wil be update 
+6. AfterViewInit()         -> i can take the view data after the load of the component
+7. AfterViewChecked()      -> it will trigger when view wil be update
+8. ngDestory()             -> when even my component unloading....
+
+1,2,4,6,8

@@ -1,0 +1,168 @@
+
+
+
+<h2>String Interpolation concept</h2>
+<span>Hi location is : {{Location}}</span>
+<br/>
+<span>1 +2 is : {{1+2}}</span>
+{{getName()}}
+===================================================
+
+<h2>Property Data Binding</h2>
+
+<input type="text" [value]="Location"/>
+
+<p style="background-color:lightblue">
+Notes : If you want to add the value to the element
+then you can go with the propertydatabinding
+</p>
+
+====================================================
+
+<h2>action or event Data Binding</h2>
+<input
+ (keyup)="evtkeyAction($event)"
+ [value]="Order"
+type="text"/>
+
+<p>{{Order}}</p>
+
+<p>
+Notes : If you want to send the value from html to ts file
+</p>
+
+<h3>Another Example</h3>
+<button (click)="evtBtnClick('Hello world')">Click</button>
+
+<br>
+============================================
+
+<h2>Two way databinding</h2>
+
+<input type="text" [(ngModel)]="ShipName" />
+
+<p>{{ShipName}}</p>
+
+<p style="background-color:lightblue">
+Two way databinding is nothing but property + event
+for that iam using the angular directive i.e. ngModel for get the same output
+
+By using the @angular/forms package i can bind the ngModel to the 
+input html element 
+</p>
+
+
+=====================================================================
+
+
+<h2>Split ngModel as a value databinding 
+    and Eventdatabinding
+</h2>
+
+<input type="text" [ngModel]="CustomerName" 
+(ngModelChange)="evtCustomerChanged($event)" />
+
+<p>{{CustomerName}}</p>
+
+<p style="background-color:lightblue">
+Two way databinding is nothing but property + event
+for that iam using the angular directive i.e. ngModel for get the same output
+
+By using the @angular/forms package i can bind the ngModel to the 
+input html element 
+</p>
+
+
+======================================================================
+
+<h2>About the ngStyle</h2>
+
+<div style="height:auto;width:auto;border:2px solid red;background-color:yellow">
+    <span>I am in Div</span>
+</div>
+
+<br>
+<div [ngStyle]="{'background-color': isValid ? 'red' : 'brown' ,
+                 'border': isValid ? '2px solid red' : '' }">
+    <span>I am in Div</span>
+</div>
+
+<div [ngStyle]="{visibility : isValid ? 'visible':'hidden'}" >
+     Are you visible ?  <h4> i am visible </h4>
+</div>
+
+<input [ngStyle]="{visibility : !isValid ? 'visible':'hidden'}" type="text" />
+
+<br>
+=====================================================
+<h2>About the ngClass</h2>
+<div class="Div">
+     <span>class Divison</span>
+</div>
+<br>
+<div [ngClass]="isValid ? 'Div' : 'anotherDiv' ">
+    <span>class Divison - One</span>
+</div>
+
+======================================================
+
+<h2>About the ngIf</h2>
+
+<!-- if is not availble in  the html -->
+
+<div>
+    <input *ngIf="isValid" type="text" />
+    <input *ngIf="!isValid" type="checkbox" />
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<!-- i mean i want to bind the hsrlayout value from the .ts file -->
+<!-- string interoplation -->
+
+
+<!-- <input type="text" value="HSRLayout"/>
+
+
+<button>Click</button> -->
+
+
+<!-- <div style="background-color:yellow"> -->
+<!-- <h1>Angular web apge</h1>
+
+
+<input type="text" value="694109"/> --> 
+
+
+<!-- html + ts + css + spec(testing) -->
+
+
+<!-- <span style="background-color:red">this is my span</span>   -->
+
+<!-- 
+<span></span>  is the html related tag
+this is my span  -> is the html span value
+style="background-color:red"  -> style of the span -->
+<!-- element of the html -->
+
+
+<!-- <h1>{{title}}</h1> -->
+
+<!-- Iam using the component  -->
+
+<!-- </div> -->
+
