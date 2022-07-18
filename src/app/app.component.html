@@ -1,17 +1,17 @@
-<button type="button" class="btn btn-primary">Primary</button>
+<!-- <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-dark">Dark</button> -->
 
 <!-- angular services last 15mins github -->
 
 
 <hr>
-<div class="card" style="width: 18rem;">
+<!-- <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -19,4 +19,39 @@
             content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-</div>
+</div> -->
+
+<!-- 
+<app-direcives-demo-one></app-direcives-demo-one> -->
+
+
+
+<span>{{name|lowercase}}</span>
+
+
+
+<!-- 1/1/2022
+2022/1/1
+1/2022/1 -->
+
+<span>{{date|date:'short'}}</span>
+
+<br>
+
+<span>{{date | date : 'shortDate'}}</span>
+
+<br>
+
+<span>{{description}}</span>
+
+<br>
+<span style="border:1px solid red">
+    {{description | stringtrimmer : 20}}</span>
+
+<br>
+
+<span style="border:1px solid red">
+    {{description | stringtrimmer : 30
+                  | removeSpecialChars: 'puts'}}</span>
+
+<br>

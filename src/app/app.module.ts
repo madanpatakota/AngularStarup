@@ -6,6 +6,10 @@ import { CustomersComponent } from './Customers.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { AngularBasicsComponent } from './angular-basics/angular-basics.component';
 import { AngularbasicsTwoComponent } from './angularbasics-two/angularbasics-two.component';
+import { DirecivesDemoOneComponent } from './direcives-demo-one/direcives-demo-one.component';
+import { NgMyOwnStyleDirective } from './ng-my-own-style.directive';
+import { StringtrimmerPipe } from './stringtrimmer.pipe';
+import { RemoveSpecialCharsPipe } from './remove-special-chars.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +17,11 @@ import { AngularbasicsTwoComponent } from './angularbasics-two/angularbasics-two
     CustomersComponent,
     CustomerDetailsComponent,
     AngularBasicsComponent,
-    AngularbasicsTwoComponent
+    AngularbasicsTwoComponent,
+    DirecivesDemoOneComponent,
+    NgMyOwnStyleDirective,
+    StringtrimmerPipe,
+    RemoveSpecialCharsPipe
   ],
   imports: [
     BrowserModule,
