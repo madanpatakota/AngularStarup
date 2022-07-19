@@ -64,9 +64,7 @@ export class ObservableDemoComponent implements OnInit {
 
 
     this.myAnularUpdates = new Observable<any>((observer) => {
-      somedata.forEach((x) => {
-         observer.next(x);
-      });
+      observer.next(somedata);
     });
 
 
