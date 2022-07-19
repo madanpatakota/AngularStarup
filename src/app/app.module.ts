@@ -10,6 +10,7 @@ import { DirecivesDemoOneComponent } from './direcives-demo-one/direcives-demo-o
 import { NgMyOwnStyleDirective } from './ng-my-own-style.directive';
 import { StringtrimmerPipe } from './stringtrimmer.pipe';
 import { RemoveSpecialCharsPipe } from './remove-special-chars.pipe';
+import { ObservableDemoComponent } from './observable-demo/observable-demo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RemoveSpecialCharsPipe } from './remove-special-chars.pipe';
     DirecivesDemoOneComponent,
     NgMyOwnStyleDirective,
     StringtrimmerPipe,
-    RemoveSpecialCharsPipe
+    RemoveSpecialCharsPipe,
+    ObservableDemoComponent
   ],
   imports: [
     BrowserModule,
